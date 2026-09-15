@@ -1,0 +1,70 @@
+{
+  "$schema": "../../workload_schema.json",
+  "sections": [
+    {
+      "groups": [
+        {
+          "name": "Load Phase",
+          "enable_granular_stats": true,
+          "inserts": {
+            "op_count": 1000000,
+            "key": {
+              "segmented": {
+                "segments": [
+                  "usertable:user",
+                  {
+                    "uniform": {
+                      "len": 19,
+                      "character_set": "numeric"
+                    }
+                  }
+                ],
+                "separator": ""
+              }
+            },
+            "val": {
+              "uniform": {
+                "len": 1024
+              }
+            }
+          }
+        },
+        {
+          "name": "Execution Phase",
+          "enable_granular_stats": true,
+          "point_queries": {
+            "op_count": 950000,
+            "selection": {
+              "latest": {
+                "s": 0.99,
+                "n": 1050000
+              }
+            }
+          },
+          "inserts": {
+            "op_count": 50000,
+            "key": {
+              "segmented": {
+                "segments": [
+                  "usertable:user",
+                  {
+                    "uniform": {
+                      "len": 19,
+                      "character_set": "numeric"
+                    }
+                  }
+                ],
+                "separator": ""
+              }
+            },
+            "val": {
+              "uniform": {
+                "len": 1024
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

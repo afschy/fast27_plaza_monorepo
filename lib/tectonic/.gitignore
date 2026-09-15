@@ -1,0 +1,10 @@
+target/
+**/*.txt
+**.log
+
+flamegraph.svg
+perf.data*
+
+.idea/
+
+test.json

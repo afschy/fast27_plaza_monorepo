@@ -1,0 +1,10 @@
+{
+  "$schema": "../../workload_schema.json",
+  "sections": [
+    {
+      "inserts": {
+        "op_count": 1
+      }
+    }
+  ]
+}
