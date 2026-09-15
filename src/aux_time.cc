@@ -2,7 +2,6 @@
  * aux_time.cpp
  *
  *  Created on: Jul 3, 2012
- *      Author: Manos Athanassoulis
  *
  *
  *  You should have received a license file with this code: license.txt

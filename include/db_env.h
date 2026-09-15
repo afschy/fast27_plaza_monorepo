@@ -352,7 +352,7 @@ public:
 
   // if true, the write will be flushed from the operating system buffer cache
   // before the write is considered complete. If true, write will be slower.
-  bool sync = false; // FIXME: (shubham) Isn't this should be true.
+  bool sync = false; // FIXME: Isn't this should be true.
 
   // if true, write will not first go to the write ahead log.
   // bool disableWAL = true;

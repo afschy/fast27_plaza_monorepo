@@ -2,7 +2,6 @@
  * aux_time.h
  *
  *  Created on: Apr 26, 2012
- *      Author: Manos Athanassoulis
  *
  *      You should have received a license file with this code: license.txt
  */
